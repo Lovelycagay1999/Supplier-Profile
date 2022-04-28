@@ -53,7 +53,8 @@ body{
 	width: 40px;
 }
 .help{
-	padding-top:250px;
+	padding-top:200px;
+	position:footer;
 }
 .help a{
 	color: #fff;
@@ -104,6 +105,7 @@ body{
 	grid-template-columns: auto auto auto auto auto;
   gap: 20px;	
 }
+
 p{
 text-align: left;
 font: normal normal bold 20px/24px Inter;
@@ -115,21 +117,101 @@ padding-left:225px;
 .grid-item a{
 	margin-left:400px;
 }
-.table{
-	width: 1100px;
-	height: 775px;
-	background-color: #FFFFFF;
+
+	
+
+.full{
 	box-shadow: 0px 4px 4px #00000005;
 	border-radius: 20px;
 	opacity: 1;
-	margin-top:30px;
-	margin-left:251px;
-}
-tr a{
-	text-align: right;
-font: normal normal 600 16px/20px Inter;
-letter-spacing: 0px;
-color: #792A85;
-opacity: 1;
+	width: 1100px;
+	height: 775px;
+	margin-left:250px;
+	background:#FFFFFF;
+	margin-top:20px;
+	table-layout: fixed;
 	
 }
+	 th a{
+		font-size:16px;
+		padding-left:0;
+		margin-left:0;
+		text-align:left;
+		float:left;
+		margin-left:30px;	
+		
+		
+
+	}
+	td{
+		text-align:left;
+		font:normal normal normal 15px/18px Inter;
+		letter-spacing: 0px;
+		color: #1F2937;
+		opacity: 1;
+		padding-left:50px;	
+	}
+	.full tr th a:hover{
+text-decoration:underline;	
+}
+button{
+	
+	background: #7EB928 0% 0% no-repeat padding-box;
+	border-radius: 6px;
+	opacity: 1;
+	text-align:center;
+	font: normal normal medium 12px/15px Inter;
+	letter-spacing: 0px;
+	color: #FFFFFF;
+	text-transform: uppercase;
+	opacity: 1;
+	width: 92px;
+	height: 32px;
+}
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #ffffff;
+    border-radius: 5px;
+    padding-top: 5px;
+	margin-top:21px;
+	
+}
+.pagination > a{
+    color: #383838;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 17px;
+    margin: 0 2px 5px;
+    min-width: 20px;
+    padding: 0 10px;
+    height: 40px;
+    text-decoration: none;
+    position: relative;
+    border-radius: 5px;
+    font-family: Helvetica, Arial, sans-serif;
+	background: #E8E8E8 0% 0% no-repeat padding-box;
+	border-radius: 8px;
+	opacity: 1;
+	width: 43px;
+height: 32px;
+}
+
+.pagination svg {
+    height: 24px;
+    width: 24px;
+}
+.pagination > a.page-active {
+    background: #7EB928;
+    color: #fff;
+}
+.pagination > a:hover {
+    background: #7EB928;
+    color: #fff;
+}
+
+	
+	
